@@ -42,3 +42,30 @@ console.log(typeof myObj)
     Learn more from here:
         https://262.ecma-international.org/5.1/#sec-11.4.3
 */
+
+
+
+// +++++++++++++ Memory +++++++++++++++++++++++++++++++++ //
+
+// Types of memory
+// Stack (Primitive), Heap (Non-primitive)
+
+
+//Stack
+let myName = "Deepak Maharjan"
+let anotherName = myName
+anotherName = "Jyapu Baucha"
+
+console.log(myName);
+console.log(anotherName);
+
+//Heap
+let userOne = {
+    email: "User1@gmail.com",
+    address: "Lalitpur"
+}
+let userTwo = userOne
+userTwo.email = "UserTwo"
+
+console.log(userOne.email)
+console.log(userTwo.email)
