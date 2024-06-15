@@ -34,10 +34,27 @@ const users = [{
 
 // console.log(users[0].email) //get data from users array and objectss
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)) // get keys of an object
-console.log(Object.values(tinderUser)) //get values from an object
-console.log(Object.entries(tinderUser)) //get all the data what an object has
+// console.log(Object.keys(tinderUser)) // get keys of an object
+// console.log(Object.values(tinderUser)) //get values from an object
+// console.log(Object.entries(tinderUser)) //get all the data what an object has
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')) //check the object has a property or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')) //check the object has a property or not
+
+
+
+// +++++++++++++ Objects destructuring +++++++++++++
+
+const course = {
+    courseName: "Mind your own business",
+    price: "1500",
+    courseInstructor: "Deepak"
+}
+// course.courseName //dont do this
+
+//Object de-structure
+//"courseInstructor" is an key of an object this must be same as in object
+//"instructor" can be rename as a user wants and easy user
+const {courseInstructor: instructor} = course //de-structure
+console.log(instructor)
