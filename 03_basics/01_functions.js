@@ -40,4 +40,39 @@ function loginUserMessage(username){
     return `${username} is logged in.`
 }
 // console.log(loginUserMessage("Deepak"))
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
+
+
+//Add values to a arrays using ... 
+function calculateCartPrice(...num){
+    return num;
+}
+
+// console.log(calculateCartPrice(200,300,500))
+
+
+// Passing object to function
+
+// const user = {
+//     username: "Deepak",
+//     age: 25
+// }
+// handleObject(user)
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and age is ${anyObject.age}`)
+}
+handleObject({
+    username: "Deepak Maharjan",
+    age: 30
+})
+
+
+// Passing array into function
+// const newArray = [100,200,300,400]
+// handleArray(newArray)
+
+function handleArray(anyArray){
+    console.log(`The given array is ${anyArray[2]}`)
+}
+handleArray([456,789,456,787])
